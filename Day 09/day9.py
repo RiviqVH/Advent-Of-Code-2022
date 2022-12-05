@@ -1,7 +1,8 @@
 ### Setup: ###
 import os
+from pprint import pprint
 
-os.chdir(r"C:\Users\Vladimir\Documents\Projects\Riviq\Advent of Code 2022\Day 9")
+os.chdir(r"C:\Users\Vladimir\Documents\Projects\Riviq\Advent of Code 2022\Day 09")
 
 ### Read input: ###
 with open('input.txt') as f:

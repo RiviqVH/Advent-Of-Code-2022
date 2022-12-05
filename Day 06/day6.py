@@ -1,7 +1,7 @@
 ### Setup: ###
 import os
 
-os.chdir(r"C:\Users\Vladimir\Documents\Projects\Riviq\Advent of Code 2022\Day 6")
+os.chdir(r"C:\Users\Vladimir\Documents\Projects\Riviq\Advent of Code 2022\Day 06")
 
 ### Read input: ###
 with open('input.txt') as f:

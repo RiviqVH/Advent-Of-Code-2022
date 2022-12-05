@@ -2,7 +2,7 @@
 import os
 import string
 
-os.chdir(r"C:\Users\Vladimir\Documents\Projects\Riviq\Advent of Code 2022\Day 3")
+os.chdir(r"C:\Users\Vladimir\Documents\Projects\Riviq\Advent of Code 2022\Day 03")
 
 ### Read input: ###
 with open('input.txt') as f:
