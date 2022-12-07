@@ -31,3 +31,6 @@ def find_unique_substring(input, length):
         if not (len(set(input[c-length:c]))) < length:
             print("Found it: " + input[c-length:c] + ', @ position ' + str(c))
             break
+
+part1 = find_unique_substring(input[0], 4)
+part2 = find_unique_substring(input[0], 14)
