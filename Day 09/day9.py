@@ -35,7 +35,6 @@ for r in input:
     for i in range(number):
         H = move_one(H, direction)
         d = distance(H, T)
-        print('H moved to ' + str(H) + ', distance: ' + str(d))
         if abs(d[0]) > 1 or abs(d[1]) > 1:
             match d:
                 case [0,2]: T = move_one(T, 'U')
@@ -51,9 +50,6 @@ for r in input:
                 case [-1,2]: T = move_one(T, 'UL')
                 case [-1,-2]: T = move_one(T, 'DL')
             t_list.append(tuple(T))
-            print('T moved to ' + str(T))
-        else:
-            print('T stayed at ' + str(T))
 part1 = len(set(t_list))
 
 ### Part 2: ###
@@ -67,8 +63,6 @@ def update_positions(rope, direction):
             print('H moved to ' + str(knot))
             continue
         d = distance(rope[idx-1], knot)
-        if abs(d[0]) + abs(d[1]) > 3: print('Weird distance found: ' + str(d))
-        # print('Distance between knot ' + str(idx -1) + ' and ' + str(idx) + ' = ' + str(d))
         if abs(d[0]) > 1 or abs(d[1]) > 1:
             match d:
                 case [0,2]: knot = move_one(knot, 'U')
@@ -88,9 +82,6 @@ def update_positions(rope, direction):
                 case [2,-2]: knot = move_one(knot, 'DR')
                 case [2,2]: knot = move_one(knot, 'UR')
             if(idx == 9): t_list2.append(tuple(knot))
-            # print('Knot ' + str(idx) + ' moved to ' + str(knot))
-        # else:
-        #     print(('Knot ' + str(idx) + ' stayed at ' + str(knot)))
 
 for r in input:
     print(r)
